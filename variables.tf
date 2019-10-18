@@ -2,12 +2,12 @@
 
 variable "prefix" {
   description = "The prefix you want to prepend resources with"
-  default     = "beaulabs"
+  default     = "beau"
 }
 
 variable "location" {
   description = "Region you want to deploy resources into"
-  default     = "west us"
+  default     = "west central us"
 }
 
 variable "avm_name" {
@@ -22,11 +22,12 @@ variable "admin_name" {
 
 variable "adminpasswd" {
   description = "The admin password you want to use if not using ssh keys for Linux vm"
+
 }
 
 variable "tags" {
   description = "Tags to use on resources"
-  type        = "map"
+  type        = map(string)
 
   default = {
     environment = "development"
@@ -34,3 +35,4 @@ variable "tags" {
     ttl         = "48"
   }
 }
+
