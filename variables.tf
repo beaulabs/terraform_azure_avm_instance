@@ -7,7 +7,7 @@ variable "prefix" {
 
 variable "location" {
   description = "Region you want to deploy resources into"
-  default     = "west central us"
+  default     = "central us"
 }
 
 variable "avm_name" {
@@ -23,6 +23,11 @@ variable "admin_name" {
 variable "adminpasswd" {
   description = "The admin password you want to use if not using ssh keys for Linux vm"
 
+}
+
+variable "vmsize" {
+  description = "The size of virtual machine desired"
+  default     = "Standard_B1ms"
 }
 
 variable "tags" {

@@ -73,7 +73,7 @@ resource "azurerm_virtual_machine" "avm_vm" {
   location              = var.location
   resource_group_name   = azurerm_resource_group.avm_rg.name
   network_interface_ids = [azurerm_network_interface.avm_nic.id]
-  vm_size               = "Standard_B2s"
+  vm_size               = var.vmsize
   tags                  = var.tags
 
   storage_image_reference {
