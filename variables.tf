@@ -36,8 +36,8 @@ variable "tags" {
 
   default = {
     environment = "development"
-    #owner       = "beau"
-    ttl = "48"
+    owner       = "beau"
+    ttl         = "48"
   }
 }
 
