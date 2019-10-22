@@ -12,7 +12,7 @@ variable "location" {
 
 variable "avm_name" {
   description = "Name of the virtual machine"
-  default     = "demobox"
+  default     = "midnight"
 }
 
 variable "admin_name" {
@@ -27,7 +27,7 @@ variable "adminpasswd" {
 
 variable "vmsize" {
   description = "The size of virtual machine desired"
-  default     = "Standard_B1ms"
+  default     = "Standard_B2ms"
 }
 
 variable "tags" {
