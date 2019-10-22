@@ -12,7 +12,7 @@ variable "location" {
 
 variable "avm_name" {
   description = "Name of the virtual machine"
-  default     = "midnight"
+  default     = "demobox"
 }
 
 variable "admin_name" {
